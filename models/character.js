@@ -1,11 +1,11 @@
-// require mongoose and import Schema
+// require mongoose and import Schema //
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // build the Schema and Model
 const CharacterSchema = new Schema({
-  name: Sting,
+  name: String,
   weight: Number
 });
 
