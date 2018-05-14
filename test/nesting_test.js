@@ -1,8 +1,17 @@
 //// USE CASE ////
-// Create and save in db
-// Use findOneAndRemove to delete record from db
-// Try to findOne in the db (just removed)
-// assert that results is "NULL"
+// before each test drop the collection
+// Create and save author with sub document in db
+// Use findOne to find record
+// assert that sub document length is equal to 1
+//
+// before each test drop the collection
+// Create and save author with sub document in db
+// Use findOne to find record
+// push a new element onto the array
+// save the record to the db
+// Use findOne to find record 
+// assert that sub document length is equal to 2
+//
 
 const assert = require('assert');
 const mongoose = require('mongoose');
