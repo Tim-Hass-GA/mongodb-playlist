@@ -33,6 +33,7 @@ beforeEach(function(done){
 
 // create the after function for mocha to
 // to do something after the test has completed...
-after(function(){
+after(function(done){
   console.log('TEST COMPLETE...!');
+  done();
 })
