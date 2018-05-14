@@ -1,4 +1,10 @@
+//// USE CASE ////
+// Create and save in db
+// Use findOne to get the record from db
+// assert that results values are equal
 
+// Use findOneById to get the record from db by Id
+// assert that results the corret record
 
 /// FINDING TESTS ///
 
@@ -8,8 +14,7 @@ const Character = require('../models/character');
 // describe tests
 describe("finding records", function(){
   // be sure to pass in done...
-  // refactor the save and create
-  // a beforeEach function
+  // refactor save
   var testChar;
 
   beforeEach(function(done){

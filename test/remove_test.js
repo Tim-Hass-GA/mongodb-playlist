@@ -12,9 +12,7 @@ const Character = require('../models/character');
 // describe tests
 describe("deleting records", function(){
   // be sure to pass in done...
-  // refactor the save and create
-  // a beforeEach function
-
+  // refactor finding
   var testChar;
 
   beforeEach(function(done){
