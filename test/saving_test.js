@@ -3,12 +3,6 @@ const assert = require('assert');
 const Character = require('../models/character');
 
 // describe tests
-// describe("some demo tests", function(){
-  // create tests
-  // ....some test
-// });
-
-// describe tests
 describe("saving records", function(){
 
   // create tests
@@ -26,4 +20,5 @@ describe("saving records", function(){
       done();
     });
   });
+
 });

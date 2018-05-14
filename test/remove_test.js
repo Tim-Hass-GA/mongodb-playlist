@@ -4,7 +4,8 @@
 // Try to findOne in the db (just removed)
 // assert that results is "NULL"
 
-/// SAVING TESTS ///
+/// REMOVING TESTS ///
+
 const assert = require('assert');
 const Character = require('../models/character');
 
@@ -24,9 +25,6 @@ describe("deleting records", function(){
     });
     // use a promise to handle saving to db
     testChar.save().then(function(){
-      // test if the char is new (return true if not yet in database,
-      // false if the character has been saved into the database)
-      assert(testChar.isNew === false);
       done();
     });
   });
