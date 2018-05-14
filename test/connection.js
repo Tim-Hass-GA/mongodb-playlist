@@ -22,6 +22,15 @@ before(function(done){
   });
 });
 
+// empty the db before each test
+// DROP the collection before testing each time.
+beforeEach(function(done){
+  // DROP THE collection, then begin tests
+  mongoose.connection.collections.characters.drop(function(){
+    done();
+  });
+});
+
 // create the after function for mocha to
 // to do something after the test has completed...
 after(function(){

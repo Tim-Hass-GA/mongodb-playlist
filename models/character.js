@@ -11,6 +11,7 @@ const CharacterSchema = new Schema({
 
 // create a model from the Schema
 // model('name', schema)
+// use singlar names....
 const Character = mongoose.model('character', CharacterSchema);
 
 // export for use
